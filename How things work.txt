@@ -1,0 +1,12 @@
+Ball curviness: 10/6/14
+ Unity physics engine is incredible. All it took to get the ball to spin (no curve though) was making a
+physic2D material that had friction and bounciness (will experiment with these values) and place it on the
+ball's circle collider. However, to get the ball to have the curve-in-the-air feel (think baseball pitching
+or ping pong), I had to do:
+
+rigidbody2D.AddForce(new Vector2(0, rigidbody2D.angularVelocity/250));
+
+ That 250 is a magic number, and i'll have to test it to see what it does. I think it's a sensitivity 
+setting. Never use magic numbers kiddies, they're bad.
+ Basically this code is taking the ball's spinniness and giving the ball a push in the right direction. I 
+don't completely understand the science behind it, but it works well so far.

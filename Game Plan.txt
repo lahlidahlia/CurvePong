@@ -1,0 +1,27 @@
+Right now this game is a pretty decent multiplayer game lacking a few necessary features
+
+lacking features:
+sound effects
+mouse control
+menu screen
+AI controlled opponent
+Resolution compatibility
+Restyle the code - Update the code to my current style
+
+I also plan to make this game into a breakout vs. game with the curveball mechanic.
+
+But for now, probably mouse control first.
+
+Relearning how the game project works:
+It's been awhile since i've touched this project. I need to refresh myself on what makes the ball spins etc...
+
+Mouse control:
+why: 
+ Because i'm not exactly confident in my AI making skill, the AI won't be a good simulation of a human's slow
+keyboard movement. AI probably will have a basic following mechanic which will probably be similar to a 
+human's mouse movement, so to keep things fair, it's probably better to give player the mouse too.
+How:
+ I can make the paddle follow the mouse's Y value exactly. Alternatively I can have the paddle accelerates
+to catchup with the mouse, although i don't think this matches up with my purpose, but it's a thought.
+
+

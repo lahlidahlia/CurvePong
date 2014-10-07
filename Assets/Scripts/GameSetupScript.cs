@@ -6,9 +6,8 @@ public class GameSetupScript : MonoBehaviour {
 
 	public Transform player1;
 	public Transform player2;
-    //<summary>
+
     //How far away is the object from the edge of the screen
-    //</summary>
     public int pxFromScreen = 75;
 
 	public GameObject[] balls;
@@ -23,6 +22,7 @@ public class GameSetupScript : MonoBehaviour {
 	void Start () {
 		balls = GameObject.FindGameObjectsWithTag("Ball");
 
+        //Setup the position of all the objects
 		player1.position = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(pxFromScreen, 0,0)).x, mainCam.ViewportToWorldPoint(new Vector3(0, 0.5f, 0)).y);
 		player2.position = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(Screen.width - pxFromScreen, 0,0)).x, mainCam.ViewportToWorldPoint(new Vector3(0, 0.5f, 0)).y);
 		wall1.position = new Vector2(mainCam.ViewportToWorldPoint(new Vector3(0.5f, 0,0)).x, mainCam.ViewportToWorldPoint(new Vector3(0, 1f, 0)).y);

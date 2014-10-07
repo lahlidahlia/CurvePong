@@ -3,27 +3,28 @@ using System.Collections;
 
 public class ControlScript : MonoBehaviour {
 
-	public Vector2 speed = new Vector2(5, 0);
-	PlayerScript player;
-	Vector2 movement;
+	public Vector2 speed;
+	private PlayerScript player;
+	private Vector2 movement;
 	// Update is called once per frame
 	void Start(){
 		player = GetComponent<PlayerScript>();
 	}
 	void Update () {
-		float inputX = 0, inputY = 0;
-		switch(player.isPlayerOne){
-		case false:
+		float inputX = 0, inputY = 0; //Holder variables for input methods
+
+        //Different movement method for player 1 and player 2
+        /*Axis sensitivity and gravity can be controlled in the Input settings*/
+		if(player.isPlayerOne){
+			inputX = Input.GetAxis("Horizontal"); //Horizontal is included just in case I ever wanted any X-axis shenanigans
+			inputY = Input.GetAxis("Vertical");
+        }
+        else{
 			inputX = Input.GetAxis("Horizontal2");
 			inputY = Input.GetAxis("Vertical2");
-			break;
-		case true:
-			inputX = Input.GetAxis("Horizontal");
-			inputY = Input.GetAxis("Vertical");
-			break;
 		}
 
-		movement = new Vector2(speed.x * inputX, speed.y * inputY);
+		movement = new Vector2(speed.x * inputX, speed.y * inputY); 
 	}
 
 	void FixedUpdate(){
