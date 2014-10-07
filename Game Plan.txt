@@ -20,8 +20,7 @@ why:
  Because i'm not exactly confident in my AI making skill, the AI won't be a good simulation of a human's slow
 keyboard movement. AI probably will have a basic following mechanic which will probably be similar to a 
 human's mouse movement, so to keep things fair, it's probably better to give player the mouse too.
-How:
- I can make the paddle follow the mouse's Y value exactly. Alternatively I can have the paddle accelerates
-to catchup with the mouse, although i don't think this matches up with my purpose, but it's a thought.
+
+status: done 10/6/14
 
 

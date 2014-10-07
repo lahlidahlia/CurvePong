@@ -10,3 +10,11 @@ rigidbody2D.AddForce(new Vector2(0, rigidbody2D.angularVelocity/250));
 setting. Never use magic numbers kiddies, they're bad.
  Basically this code is taking the ball's spinniness and giving the ball a push in the right direction. I 
 don't completely understand the science behind it, but it works well so far.
+
+Mouse controlled paddle:
+ I can make the paddle follow the mouse's Y value exactly. Alternatively I can have the paddle accelerates
+to catchup with the mouse, although i don't think this matches up with my purpose, but it's a thought.
+ Can't make the paddle take on mouse's Y position because it won't be given a velocity value which is
+important to make the ball spin.
+what works: Find the distance between the mouse and the paddle's position every frame and give the paddle
+that velocity.

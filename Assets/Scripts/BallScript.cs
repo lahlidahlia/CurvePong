@@ -51,7 +51,7 @@ public class BallScript : MonoBehaviour {
 
 		//Gradually increasing the speed
 	    rigidbody2D.velocity = new Vector2(Math.Sign(rigidbody2D.velocity.x) * constSpeedX, rigidbody2D.velocity.y);
-        rigidbody2D.drag = isTooFast() != 0? 0f : 0; //If ball is going too fast, add some drag to it
+        rigidbody2D.drag = isTooFast() != 0? 1f : 0; //If ball is going too fast, slow it down
 
         Debug.Log("Angular Vel = " + rigidbody2D.angularVelocity);
         rigidbody2D.AddForce(new Vector2(0, rigidbody2D.angularVelocity/250)); //Gives the ball the "curviness" feel. Otherwise it's just a spinny ball
