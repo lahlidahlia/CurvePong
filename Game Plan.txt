@@ -1,21 +1,23 @@
 Right now this game is a pretty decent multiplayer game lacking a few necessary features
 
+--Stuffs-- = finished
+
 lacking features:
-sound effects
-mouse control
+--mouse control--
+--Resolution compatibility--
 menu screen
+sound effects
 AI controlled opponent
-Resolution compatibility
 Restyle the code - Update the code to my current style
+polish
 
 I also plan to make this game into a breakout vs. game with the curveball mechanic.
 
-But for now, probably mouse control first.
+But for now, polish this game first.
 
-Relearning how the game project works:
-It's been awhile since i've touched this project. I need to refresh myself on what makes the ball spins etc...
 
-Mouse control:
+
+MOUSE CONTROL:
 why: 
  Because i'm not exactly confident in my AI making skill, the AI won't be a good simulation of a human's slow
 keyboard movement. AI probably will have a basic following mechanic which will probably be similar to a 
@@ -24,3 +26,21 @@ human's mouse movement, so to keep things fair, it's probably better to give pla
 status: done 10/6/14
 
 
+
+
+RESOLUTION COMPATIBILITY
+what:
+ Right now the game would change when you start with different resolution. For example, the distance
+between the two paddles would get shorter
+
+why:
+ The game shouldn't be change when you change resolution. 
+
+status: abandoned 10/10/14
+ Will just force the game to be played on 16:9 and 16:10. Too much work involved and this game probably 
+won't be played on any other resolutions
+
+
+MENU SCREEN: started 10/10/14
+what:
+ should have: an option button, a play button, a background, something to make it look prettier etc...

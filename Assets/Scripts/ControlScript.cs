@@ -13,7 +13,12 @@ public class ControlScript : MonoBehaviour {
 	}
     void Update() {
         float inputX = 0, inputY = 0; //Holder variables for input methods
-
+        if (player.isPlayerOne) {
+            useMouse = Global.player1_mouse;
+        }
+        else {
+            useMouse = Global.player2_mouse;
+        }
         //Different movement method for player 1 and player 2
         /*Axis sensitivity and gravity can be controlled in the Input settings*/
         if (useMouse) {
